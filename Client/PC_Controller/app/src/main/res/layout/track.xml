@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/holo_blue_dark"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/shut"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:text="shut down"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/restart"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/shut"
+            android:layout_alignStart="@+id/shut"
+            android:layout_below="@+id/shut"
+            android:text="restart"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/lock"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/restart"
+            android:layout_alignStart="@+id/restart"
+            android:layout_below="@+id/restart"
+            android:text="suspend"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/suspend"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lock"
+            android:layout_alignStart="@+id/lock"
+            android:layout_below="@+id/lock"
+            android:text="lock"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/snapshot"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/suspend"
+            android:layout_alignStart="@+id/suspend"
+            android:layout_below="@+id/suspend"
+            android:text="snapshot"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/folder"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/snapshot"
+            android:layout_alignStart="@+id/snapshot"
+            android:layout_below="@+id/snapshot"
+            android:text="folder"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/browse"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/folder"
+            android:layout_alignStart="@+id/folder"
+            android:layout_below="@+id/folder"
+            android:text="browsing"
+            android:textSize="30sp" />
+    </RelativeLayout>
+</LinearLayout>
